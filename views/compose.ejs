@@ -1,0 +1,14 @@
+<%- include("header.ejs") %>
+<form action="/compose" method="post">
+    <h1>Compose</h1>
+    <div class="form-group">
+        <label for="topic">Topic: </label>
+        <input type="text" name="topic" id="topic" class="form-control">
+        <hr>
+        <label for="details">Details:</label>
+        <textarea name="details" id="details" rows="10" class="form-control" placeholder="Enter your message here"
+            maxlength="500"></textarea>
+    </div>
+    <button name="post" class="btn btn-primary" type="submit">Post</button>
+</form>
+<%- include("footer.ejs") %>
